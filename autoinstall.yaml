@@ -1,4 +1,3 @@
-#cloud-config
 autoinstall:
   version: 1
 
@@ -127,9 +126,9 @@ autoinstall:
           *   over en akkoord gaat met het beveiligingsbeleid van           *
           *   yprius.be.                                                    *
           *                                                                 *
-          *            ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·                *
+          *          ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·                *
           *                                                                 *
-          *                   WELCOME TO YPRIUS.BE                          *
+          *                  WELCOME TO YPRIUS.BE                          *
           *                                                                 *
           *   Access is strictly limited to authorized personnel only.      *
           *   All activities on this system are logged, monitored, and      *
