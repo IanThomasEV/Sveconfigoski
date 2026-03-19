@@ -2,6 +2,7 @@ autoinstall:
   version: 1
 
   locale: nl_BE.UTF-8
+
   keyboard:
     layout: be
     variant: ""
@@ -9,7 +10,9 @@ autoinstall:
   network:
     version: 2
     ethernets:
-      eth0:
+      mainif:
+        match:
+          name: "en*"
         dhcp4: true
         dhcp-identifier: mac
 
@@ -20,8 +23,9 @@ autoinstall:
   timezone: Europe/Brussels
 
   identity:
-    hostname: alfa
+    hostname: mike
     username: kingsman
+    # Root wachtwoord hash: genereer met: python3 -c "import crypt; print(crypt.crypt('3Bn92un2ZS1i&vvQimdX', crypt.mksalt(crypt.METHOD_SHA512)))"
     password: "$6$Fsb0hcO21eUOypDy$rNBDTmPgCkvIDLTzCrZp.l1gAeRfx7hdx/1gQxDC/lVoMkGsfkHIZ7OqPsMixvU9uOVS/rU1KNV8OKyhL4EzD."
 
   ssh:
@@ -54,5 +58,9 @@ autoinstall:
     - jq
     - uidmap
     - dbus-user-session
+    - slirp4netns
+    - passt
 
   updates: security
+
+  late-commands: []
