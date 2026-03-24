@@ -25,7 +25,7 @@ autoinstall:
   identity:
     hostname: echo
     username: kingsman
-    password: "VERVANG_MET_HASH"
+    password: "$6$Fsb0hcO21eUOypDy$rNBDTmPgCkvIDLTzCrZp.l1gAeRfx7hdx/1gQxDC/lVoMkGsfkHIZ7OqPsMixvU9uOVS/rU1KNV8OKyhL4EzD."
 
   ssh:
     install-server: true
