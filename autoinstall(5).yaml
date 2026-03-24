@@ -1,0 +1,65 @@
+autoinstall:
+  version: 1
+
+  locale: nl_BE.UTF-8
+
+  keyboard:
+    layout: be
+    variant: ""
+
+  network:
+    version: 2
+    ethernets:
+      mainif:
+        match:
+          name: "en*"
+        dhcp4: true
+        dhcp-identifier: mac
+
+  storage:
+    layout:
+      name: lvm
+
+  timezone: Europe/Brussels
+
+  identity:
+    hostname: echo
+    username: kingsman
+    password: "VERVANG_MET_HASH"
+
+  ssh:
+    install-server: true
+    allow-pw: false
+    authorized-keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKUIFa7mg2IGccSGIAx1DYqKiZydA2Q1kVeA23KPzHla it@Tapo-P10
+
+  packages:
+    - curl
+    - wget
+    - git
+    - gnupg
+    - ca-certificates
+    - apt-transport-https
+    - ufw
+    - fail2ban
+    - unattended-upgrades
+    - apt-listchanges
+    - logwatch
+    - auditd
+    - libpam-pwquality
+    - rkhunter
+    - chkrootkit
+    - lynis
+    - aide
+    - acl
+    - htop
+    - net-tools
+    - jq
+    - uidmap
+    - dbus-user-session
+    - slirp4netns
+    - passt
+
+  updates: security
+
+  late-commands: []
