@@ -23,7 +23,7 @@ autoinstall:
   timezone: Europe/Brussels
 
   identity:
-    hostname: echo
+    hostname: lima
     username: kingsman
     password: "$6$Fsb0hcO21eUOypDy$rNBDTmPgCkvIDLTzCrZp.l1gAeRfx7hdx/1gQxDC/lVoMkGsfkHIZ7OqPsMixvU9uOVS/rU1KNV8OKyhL4EzD."
 
