@@ -23,9 +23,8 @@ autoinstall:
   timezone: Europe/Brussels
 
   identity:
-    hostname: mike
+    hostname: lima
     username: kingsman
-    # Root wachtwoord hash: genereer met: python3 -c "import crypt; print(crypt.crypt('3Bn92un2ZS1i&vvQimdX', crypt.mksalt(crypt.METHOD_SHA512)))"
     password: "$6$Fsb0hcO21eUOypDy$rNBDTmPgCkvIDLTzCrZp.l1gAeRfx7hdx/1gQxDC/lVoMkGsfkHIZ7OqPsMixvU9uOVS/rU1KNV8OKyhL4EzD."
 
   ssh:
